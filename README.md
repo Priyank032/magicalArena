@@ -49,9 +49,6 @@ Magical Arena is a TypeScript-based game where two players compete by attacking 
    Compile the TypeScript files to JavaScript:
     ```sh
    npm run build
-   Start the game using Node.js:
-
-   ```sh
    npm run serve
 
 
@@ -87,19 +84,19 @@ After the game concludes:
 
 ## Project Structure
 
-magical_arena/
-├── src/
-│   ├── Player.ts        # Defines the Player class and its methods
-│   ├── Match.ts         # Manages the game logic and player interactions
-│   └── main.ts          # Entry point to start the game
-├── test/
-│   ├── Player.test.ts   # Defines Unit tests for Player Class
-│   ├── Match.test.ts    # Defines Unit tests for Match Class
-├── dist/                # Compiled JavaScript files (generated after build)
-├── package.json         # npm package configuration file
-├── .gitignore           # Specifies files and directories to be ignored by Gi
-├── tsconfig.json        # TypeScript compiler configuration
-└── node_modules/        # npm dependencies (not included in repository)
+      magical_arena/
+      ├── src/
+      │   ├── Player.ts        # Defines the Player class and its methods
+      │   ├── Match.ts         # Manages the game logic and player interactions
+      │   └── main.ts          # Entry point to start the game
+      ├── test/
+      │   ├── Player.test.ts   # Defines Unit tests for Player Class
+      │   ├── Match.test.ts    # Defines Unit tests for Match Class
+      ├── dist/                # Compiled JavaScript files (generated after build)
+      ├── package.json         # npm package configuration file
+      ├── .gitignore           # Specifies files and directories to be ignored by Gi
+      ├── tsconfig.json        # TypeScript compiler configuration
+      └── node_modules/        # npm dependencies (not included in repository)
 
 ## Game Mechanics
 Player Attributes
