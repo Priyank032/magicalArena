@@ -1,5 +1,7 @@
 import readline from 'readline'; 
 import Player from './Player';
+import Match from './Match'; 
+
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
@@ -37,6 +39,10 @@ async function main() {
   const playerA = await createPlayer('Player A'); // Create Player A
   const playerB = await createPlayer('Player B'); // Create Player B
 
+  const match = new Match(playerA, playerB); // Create a Match instance with Player A and Player B
+  await match.start(); // Start the match
+
+  rl.close(); // Close readline interface after the match ends
 }
 
 main().catch(console.error); // Execute main function and handle any errors
