@@ -1,0 +1,21 @@
+{
+  "name": "magical_arena",
+  "version": "1.0.0",
+  "main": "index.js",
+ "scripts": {
+  "start": "npx ts-node src/index.ts",
+"test": "node --test -r ts-node/register test/*.test.ts",
+  "build": "npx tsc",
+  "serve": "node dist/index.js"
+},
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2"
+  }
+}
