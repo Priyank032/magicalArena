@@ -1,18 +1,23 @@
 {
-  "name": "magical_arena",
-  "version": "1.0.0",
+  "name": "magicalArena",
+  "version": "1.0.1",
   "main": "index.js",
- "scripts": {
-  "start": "npx ts-node src/index.ts",
-  "test": "node --test -r ts-node/register test/*.test.ts",
-  "build": "npx tsc",
-  "serve": "node dist/index.js"
-},
-
-  "keywords": [],
-  "author": "",
+  "scripts": {
+    "start": "npx ts-node src/index.ts",
+    "test": "npx ts-node tests/Player.test.ts && npx ts-node tests/Match.test.ts",
+    "build": "npx tsc",
+    "serve": "node dist/index.js"
+  },
+  "keywords": [
+    "game",
+    "typescript",
+    "nodejs",
+    "turn-based",
+    "player-vs-player"
+  ],
+  "author": "Priyank Agrawal",
   "license": "ISC",
-  "description": "",
+  "description": "Magical Arena is a TypeScript-based turn-based game where two players compete by attacking and defending each other.",
   "devDependencies": {
     "@types/node": "^20.14.9",
     "ts-node": "^10.9.2",

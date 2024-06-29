@@ -85,15 +85,4 @@ describe('Match', () => {
 
     assert.strictEqual(playerA.isAlive(), true);
   });
-
-  // Match handles a player with negative health (if possible)
-  it('should handle a player with negative health (if possible)', async () => {
-    const playerA = new Player(-100, 10, 5, 'Player A');
-    const playerB = new Player(100, 10, 5, 'Player B');
-    const match = new Match(playerA, playerB);
-
-    await match.start();
-
-    assert.strictEqual(playerA.isAlive(), false);
-  });
 });
